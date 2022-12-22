@@ -1,0 +1,53 @@
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="card" style="max-width: 5000px;">
+        <div class="row g-6">
+            <div class="col-md-4">
+                <img src="../assets/images/carro.jpg" class="img-fluid rounded-start" alt="carro ">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <form [formGroup]="vehiculoForm" (ngSubmit)="crear()">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Placa:</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input validar type="text" id="placaCrearVehiculo" name="placa" placeholder="Digita la placa"
+                                    class="form-control" formControlName="placa">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Identificación propietario:</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input validar type="number" id="identificacionCrearVehiculo" name="identificacion"
+                                    placeholder="Digita la identificacion del propietario" class="form-control"
+                                    formControlName="identificacion">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label>Teléfono contacto:</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <input validar type="number" id="telefonoContactoCrearVehiculo" name="telefonoContacto"
+                                    placeholder="Digita la cantidad de dias" class="form-control"
+                                    formControlName="telefonoContacto">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-primary btn-lg" id="crearCrearVehiculo">Crear vehiculo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

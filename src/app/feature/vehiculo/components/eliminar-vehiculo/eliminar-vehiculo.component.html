@@ -1,0 +1,29 @@
+<br>
+<br>
+<br>
+<br>
+<div class="card" style="max-width: 5000px;">
+  <div class="row g-6">
+    <div class="col-md-4">
+      <img src="../assets/images/carro.jpg" class="img-fluid rounded-start" alt="facuta ">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <form [formGroup]="vehiculoEliminarForm" (ngSubmit)="eliminar()">
+          <div class="row">
+            <div class="col-sm-2">
+              <label>Placa:</label>
+            </div>
+            <div class="col-sm-4">
+              <input validar type="text" id="placaEliminarVehiculo" name="placa" placeholder="Digita la placa" class="form-control"
+                formControlName="placa">
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-lg" id="eliminarEliminarVehiculo">Eliminar vehiculo</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

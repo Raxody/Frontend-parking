@@ -1,0 +1,29 @@
+<br>
+<br>
+<br>
+<br>
+<div class="card" style="max-width: 5000px;">
+  <div class="row g-6">
+    <div class="col-md-4">
+      <img src="../assets/images/factura.jpg" class="img-fluid rounded-start" alt="factura ">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <form [formGroup]="facturaForm" (ngSubmit)="crear()">
+          <div class="row">
+            <div class="col-sm-2">
+              <label>Placa:</label>
+            </div>
+            <div class="col-sm-4">
+              <input validar type="text" id="placaFkCrearFactura" name="placaFk" placeholder="Digita la placa" class="form-control"
+                formControlName="placaFk">
+            </div>
+            <div class="row">
+              <button class="btn btn-primary btn-lg" id="guardarCrearFactura">Generar factura</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

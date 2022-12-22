@@ -1,0 +1,24 @@
+<br>
+<br>
+<table class="table table-hover">
+  <caption>Listado de facturas</caption>
+  <thead>
+    <tr>
+      <th scope="col">Id factura</th>
+      <th scope="col">placa</th>
+      <th scope="col">Fecha ingreso</th>
+      <th scope="col">Cantidad dias </th>
+      <th scope="col">valor</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of listaFacturas | async">
+    <tr>
+      <td>{{item.idFactura}}</td>
+      <td>{{item.placaFk}}</td>
+      <td>{{item.fechaIngreso}}</td>
+      <td>{{item.cantDias}}</td>
+      <td>{{item.valor}}</td>
+    </tr>
+    <tr>
+  </tbody>
+</table>

@@ -1,0 +1,7 @@
+{
+  "/parqueadero": {
+    "target": "http://localhost:8083",
+    "logLevel": "debug"
+  }
+
+}

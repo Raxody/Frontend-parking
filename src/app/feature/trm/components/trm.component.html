@@ -1,0 +1,7 @@
+    <ul>
+      <li class="card-text" >
+        <p *ngFor="let trm of trmActual | async | slice :0:1">
+          {{ trm.valor | currency }}
+        </p>
+      </li>
+   </ul>

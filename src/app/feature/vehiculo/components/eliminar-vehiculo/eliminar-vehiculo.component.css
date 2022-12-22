@@ -1,0 +1,21 @@
+label {
+    font-size: x-large;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+
+
+  .btn-primary{
+    height:50px; 
+    width:250px; 
+    position:relative;
+    top:20%; 
+    left:20%;
+    text-align:center;
+    font-weight: bold;
+    font-size: 130%;
+    background-color: red; 
+    border-color: red;
+}
+
+
